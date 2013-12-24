@@ -1,0 +1,113 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+
+body {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    background: #3d2f24 url(images/bg_dark_l.jpg) repeat 0 0;
+    font-weight: 300;
+}
+a {
+    color: #333;
+    outline: none;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+}
+img{
+    border: 0;
+    vertical-align: middle;
+}
+input {
+    outline: none;
+    vertical-align: middle;
+}
+h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,p,form,fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+    font-weight: 400;
+    text-decoration:
+        none;
+}
+h1{font-size: 130%;}
+h2{font-size: 120%;}
+h3{font-size: 110%;}
+h4{font-size: 100%;}
+h5{font-size: 90%;}
+h6{font-size: 80%;}
+
+.wrap { }
+.center {
+    text-align: center;
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+}
+
+
+#footer{
+    position: fixed;
+    background:#efefef ;
+    height: 26px;
+    bottom: 0;
+    width: 100%;
+}
+@media only screen and (min-width: 1280px) {
+
+
+
+}
+@media only screen and (max-width: 639px) {
+
+    .media-list>li { float: none; width: auto; padding: 0 20px; height: 105px;}
+    .media-list>li h5 { font-size: 16px; padding: 0 0 10px; }
+    .media-list>li img { width: 90px; height: 90px; float: left; margin-right: 15px; }
+    .media-list>li .descr { display: block; }
+
+}
+
+@media only screen and (min-width: 960px) {
+
+    .feed-list { margin-left: 500px; }
+    .some-list { display: block; float: left; width: 500px; }
+
+    .some-list { border-top: solid 1px #ececec; }
+    .some-list>li { float: left; width: 248px; height: 180px; margin: 0 2px 2px 0; background: rgba(0,0,0,0.6); }
+    .some-list .feed-item-info { position: relative; margin: 0 0 0 13px;  }
+    .some-list .feed-item-info>a>img { width: 133px; height: 133px; position: absolute; top: 0; left: 0; }
+    .some-list .feed-item-instant { font-size: 12px; line-height: 13px; display: block; position: absolute; top: 50px; right: 60px; padding: 2px 7px 0 20px; background: url(images/instant.png) no-repeat 7px 50%; }
+    .some-list .feed-item-time { font-size: 12px; line-height: 13px; display: block; position: absolute; top: 50px; right: 7px; padding: 2px 7px 0; }
+    .some-list .feed-item-info h5 { color: #cfee5b; font-size: 18px; line-height: 18px; white-space: nowrap; overflow: hidden; width: 235px; text-overflow: ellipsis; position: absolute; top: 150px; left: 0px; }
+    .some-list .feed-item-descr { display: none; }
+    .some-list .feed-item-imdb { color: #fff; font-size: 13px; line-height: 16px; position: absolute; top: 90px; right: 15px; padding: 0 0 0 26px; background: url(images/imdb.png) no-repeat 0 0; }
+    .some-list .feed-item-rating { display: block; position: absolute; top: 32px; right: 15px; width: 74px; height: 13px; background: url(images/rating.png) no-repeat 0 0; }
+    .some-list .feed-item-rating span { display: block; width: 74px; height: 13px; background: url(images/rating.png) no-repeat 0 -13px; }
+    .some-list .feed-item-author-info { color: #fff; font-size: 11px; height: 115px; margin: 0 0 5px; overflow: hidden; border-bottom: solid 3px #aabc7b; }
+    .some-list .feed-item-author-info>div { display: none; }
+    .some-list .feed-item-author { font-size: 14px; font-weight: 100; position: absolute; top: 127px; left: 0; }
+    .some-list .feed-item-author-photo { position: absolute; left: 0; top: 15px; width: 90px; height: 90px; }
+    .some-list .feed-item-date { color: #96928f; font-size: 11px; line-height: 20px; display: block; position: absolute; top: 5px; right: 10px; }
+
+    .some-list .feed-item-bottom { font-size: 11px; line-height: 22px; margin: 0 0; padding: 0 13px; }
+    .some-list .feed-item-bottom>span { display: none; }
+    .some-list .feed-item-bottom:hover { color: #fff; background: transparent; }
+    .some-list .feed-item-bottom-right { float: right; }
+    .some-list .feed-item-icon-likes { padding: 2px 0 0 18px; margin-right: 8px; background: url(images/icon-likes.png) no-repeat 0 0; }
+    .some-list .feed-item-bottom:hover .feed-item-icon-likes { background-position: 0 0; }
+    .some-list .feed-item-icon-comments { padding: 0 0 0 22px; background: url(images/icon-comments.png) no-repeat 0 0; }
+    .some-list .feed-item-bottom:hover .feed-item-icon-comments { background-position: 0 0; }
+
+    .some-item-comments { display: none !important; }
+
+
+}
+
