@@ -1,9 +1,21 @@
 /**
  * Created by howtwizer on 23.12.13.
  */
+function contentheight(){
+    var contentheight = $(document).height() - 76;
+    $('.content').height( contentheight );
+}
 
-$(document).ready(function()
-{
+$(window).bind('resize', function(){
+    contentheight();
+});
+
+$(document).ready(function(){
+
+    contentheight();
+
+
+
     $.getJSON(
         "http://dstworks.com:8080/IvaWrapperWeb/getMedias",
         {
@@ -13,9 +25,8 @@ $(document).ready(function()
             var feedList = [];
             $(data).each(function(index, feedItem) {
                 feedList.push(
-                    '<li>\
+                    '<li class="item">\
                         <div class="feed-item-info">\
-                            <a href="media/'+feedItem.media_id+'"><img src="'+feedItem.image+'" alt="" /></a>\
 						<h5>'+feedItem.title+'</h5>\
 						<span class="feed-item-instant">Instant</span>\
 						<span class="feed-item-time">02:45:07</span>\
@@ -63,8 +74,9 @@ $(document).ready(function()
             $('.feed-item-bottom').click(function(){
                 $(this).closest('li').find('.feed-item-comments').toggle();
             });
-            $('#someList').append(feedList);
+            $('#resentList').append(feedList);
            // feedList.appendTo('#someList');
         }
     );
+
 });
