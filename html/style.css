@@ -93,7 +93,7 @@ h6{font-size: 80%;}
 /* LIST'S */
 .content{
     position: relative;
-    margin: 50px 0 26px 0;
+    margin: 0 0 26px 0;
 }
 
 .item{
@@ -290,7 +290,7 @@ h6{font-size: 80%;}
             height: 180px;
             margin: 0 2px 2px 0;
             background: rgba(0,0,0,0.6);
-            
+            position: relative;
         }
 
 
@@ -432,7 +432,12 @@ h6{font-size: 80%;}
     #left .feed-item-comments,   #left .feed-item-bottom>span, #left .feed-item-author-info>div {
         display: none !important;
     }
-
+    #left .coverbg{
+       background: rgba(0,0,0,0.6);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
 
 
     #main{
