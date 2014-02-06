@@ -5,34 +5,14 @@ function contentheight(){
     var contentheight = $(document).height();
     $('.content').height( contentheight );
 }
+function builder(data) {
 
-$(window).bind('resize', function(){
-    contentheight();
-});
-
-$(document).ready(function(){
-
-    contentheight();
+    var feedList = [];
 
 
-
-    $.getJSON(
-         //"http://54.201.170.111:8080/IvaWrapperWeb/getMedias",
-        "nebeltv://mediawrapper.com/getMedias",
-        {
-            skip: 100,
-            n: 3,
-            category: 0,
-            callback: 'builder'
-        },
-        function builder(data) {
-
-           var feedList = [];
-
-
-            $(data).each(function(index, feedItem) {
-                feedList.push(
-                    '<li class="item" id="'+index+'">\
+    $(data).each(function(index, feedItem) {
+        feedList.push(
+            '<li class="item" id="'+index+'">\
                         <div class="feed-item-info">\
                         <a href="http://mirrorblender.top-ix.org/peach/bigbuckbunny_movies/big_buck_bunny_480p_h264.mov"><img src="'+feedItem.image+'" alt="" /></a>\
 						<h5>'+feedItem.title+'</h5>\
@@ -74,13 +54,13 @@ $(document).ready(function(){
 					</div>\
 				</li>');
 
-            });
+    });
 
-            var resentList = [];
+    var resentList = [];
 
-            $(data).each(function(index, feedItem) {
-                resentList.push(
-                    '<li class="item" style="background: url(' +feedItem.image+ ') 100%/100% no-repeat;">\
+    $(data).each(function(index, feedItem) {
+        resentList.push(
+            '<li class="item" style="background: url(' +feedItem.image+ ') 100%/100% no-repeat;">\
                         <div class="coverbg" ></div>\
                         <div class="feed-item-info">\
 						<h5>'+feedItem.title+'</h5>\
@@ -103,19 +83,41 @@ $(document).ready(function(){
 							<span>Tags: ● San diego, ● David koechner</span>\
 						</div>\
 					</div></li>');
-            });
+    });
 
-            //alert (feedList);
+    //alert (feedList);
 
-            $('#feedList').append(feedList);
-            //$(feedList).appendTo($('#feedList'));
+    $('#feedList').append(feedList);
+    //$(feedList).appendTo($('#feedList'));
 
-            $('.feed-item-bottom').click(function(){
-                $(this).closest('li').find('.feed-item-comments').toggle();
-            });
-            $('#resentList').append(resentList);
-           // feedList.appendTo('#someList');
+    $('.feed-item-bottom').click(function(){
+        $(this).closest('li').find('.feed-item-comments').toggle();
+    });
+    $('#resentList').append(resentList);
+    // feedList.appendTo('#someList');
+}
+$(window).bind('resize', function(){
+    contentheight();
+});
+
+$(document).ready(function(){
+
+    contentheight();
+
+
+
+    $.getJSON(
+        "http://54.201.170.111:8080/IvaWrapperWeb/getMedias",
+        //"http://nebel.tv/getMedias",
+        {
+            skip: 100,
+            n: 3,
+            category: 0,
+            callback: 'builder'
         }
+
+
+
     );
 
 });
