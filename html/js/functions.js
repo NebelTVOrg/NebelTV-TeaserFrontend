@@ -107,8 +107,8 @@ $(document).ready(function(){
 
 
     $.getJSON(
-        "http://54.201.170.111:8080/IvaWrapperWeb/getMedias",
-        //"http://nebel.tv/getMedias",
+        //"http://54.201.170.111:8080/IvaWrapperWeb/getMedias",
+        "http://nebel.tv/getMedias",
         {
             skip: 100,
             n: 3,
