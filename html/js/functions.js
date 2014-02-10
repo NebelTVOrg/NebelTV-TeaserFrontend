@@ -7,8 +7,11 @@ function contentheight(){
 }
 
 function builderParcer(data){
-    var parsedData =  jQuery.parseJSON(data);
+    var parsedData =  $(data);
     console.log(parsedData);
+
+
+
 }
 
 function builder(parsedData) {
@@ -120,7 +123,7 @@ $(document).ready(function(){
             n: 3,
             category: 0,
             callback: 'builderParcer'
-        }, builder
+        }, builderParcer
 
 
 
