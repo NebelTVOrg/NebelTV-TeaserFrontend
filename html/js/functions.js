@@ -114,7 +114,7 @@ $(document).ready(function(){
             n: 3,
             category: 0,
             callback: 'builder'
-        }
+        }, builder
 
 
 
