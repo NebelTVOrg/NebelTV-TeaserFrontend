@@ -5,12 +5,18 @@ function contentheight(){
     var contentheight = $(document).height();
     $('.content').height( contentheight );
 }
-function builder(data) {
+
+function builderParcer(data){
+    var parsedData =  jQuery.parseJSON(data);
+    console.log(parsedData);
+}
+
+function builder(parsedData) {
 
     var feedList = [];
 
 
-    $(data).each(function(index, feedItem) {
+    $(parsedData).each(function(index, feedItem) {
         feedList.push(
             '<li class="item" id="'+index+'">\
                         <div class="feed-item-info">\
@@ -58,7 +64,7 @@ function builder(data) {
 
     var resentList = [];
 
-    $(data).each(function(index, feedItem) {
+    $(parsedData).each(function(index, feedItem) {
         resentList.push(
             '<li class="item" style="background: url(' +feedItem.image+ ') 100%/100% no-repeat;">\
                         <div class="coverbg" ></div>\
@@ -113,7 +119,7 @@ $(document).ready(function(){
             skip: 100,
             n: 3,
             category: 0,
-            callback: 'builder'
+            callback: 'builderParcer'
         }, builder
 
 
