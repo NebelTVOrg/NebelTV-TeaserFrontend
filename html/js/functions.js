@@ -7,11 +7,8 @@ function contentheight(){
 }
 
 function builderParcer(data){
-    var parsedData =  $(data);
-    console.log(parsedData);
-
-
-
+    var parsedData =  eval('('+data+')');
+    builder(parsedData);
 }
 
 function builder(parsedData) {
