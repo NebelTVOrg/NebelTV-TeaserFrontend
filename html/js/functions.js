@@ -1,11 +1,6 @@
 /**
  * Created by howtwizer on 23.12.13.
  */
-function contentheight(){
-    var contentheight = $(document).height();
-    $('.content').height( contentheight );
-}
-
 function builderParcer(data){
     var parsedData =  eval('('+data+')');
     builder(parsedData);
@@ -64,7 +59,7 @@ function builder(parsedData) {
 
 
     $('#feedList').append(feedList);
-    //$(feedList).appendTo($('#feedList'));
+
 
     $('.feed-item-bottom').click(function(){
         $(this).closest('li').find('.feed-item-comments').toggle();
@@ -74,8 +69,6 @@ function builder(parsedData) {
 
 
 $(document).ready(function(){
-
-
 
     $.getJSON(
         //"http://54.201.170.111:8080/IvaWrapperWeb/getMedias",
