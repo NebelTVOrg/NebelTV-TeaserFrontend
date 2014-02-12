@@ -13,47 +13,24 @@ function builder(parsedData) {
 
     $(parsedData).each(function(index, feedItem) {
         feedList.push(
-            '<li class="item" id="'+index+'">\
-                        <div class="feed-item-info">\
-                        <a href="http://mirrorblender.top-ix.org/peach/bigbuckbunny_movies/big_buck_bunny_480p_h264.mov"><img src="'+feedItem.image+'" alt="" /></a>\
-						<h5>'+feedItem.title+'</h5>\
-						<span class="feed-item-instant">Instant</span>\
-						<span class="feed-item-time">feedItem.duration</span>\
-						<span class="feed-item-imdb">'+feedItem.imdb_rating+'</span>\
-						<span class="feed-item-rating"><span style="width: '+feedItem.rating+'%"></span></span>\
-						<div class="feed-item-descr">'+feedItem.descr+'</div>\
-						<div class="feed-item-author-info">\
-							<span class="feed-item-author">Создатель Записи</span>\
-							<span class="feed-item-date">'+feedItem.date+'</span>\
-							<div>Здесь сообщение от френда, который поделился этим медиа контентом Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</div>\
-							<img class="feed-item-author-photo" src="https://pp.vk.me/c313225/v313225380/2bd4/cnVjs4x6oO0.jpg">\
-						</div>\
-						<div class="feed-item-bottom">\
-							<div class="feed-item-bottom-right">\
-								<span class="feed-item-icon-likes">'+(Math.floor(Math.random()*1000))+'</span>\
-								<span class="feed-item-icon-comments">'+(Math.floor(Math.random()*100))+'</span>\
-							</div>\
-							<span>Tags: '+ feedItem.tagline +'</span>\
-						</div>\
-					<div class="feed-item-comments">\
-						<div class="feed-item-comment">\
-							<img src="https://pp.vk.me/c313225/v313225380/2bd4/cnVjs4x6oO0.jpg" alt="" />\
-							<h6>Друг Первый</h6>\
-								Комментарии друзей 1 Комментарии друзей 1 Комментарии друзей 1 \
-						</div>\
-						<div class="feed-item-comment feed-item-comment-answer">\
-							<img src="https://pp.vk.me/c313225/v313225380/2bd4/cnVjs4x6oO0.jpg" alt="" />\
-							<h6>Друг Второй</h6>\
-							Комментарии друзей 2 Комментарии друзей 2 Комментарии друзей 2  \
-						</div>\
-						<div class="feed-item-comment">\
-							<img src="https://pp.vk.me/c313225/v313225380/2bd4/cnVjs4x6oO0.jpg" alt="" />\
-							<h6>Друг Третий</h6>\
-							Комментарии друзей 3 Комментарии друзей 3 Комментарии друзей 3 \
-						</div>\
-					</div>\
-					</div>\
-				</li>');
+            '<div class="col-xs-12 col-sm-6 col-md-4">\
+                <div class="feed-item">\
+                    <div class="item-header">\
+                        <span class="item-author">Item Author</span><span class="item-social"><span class="icon like"></span>'+(Math.floor(Math.random()*1000))+'<span class="icon comments"></span>'+(Math.floor(Math.random()*1000))+'</span>\
+                    </div>\
+                    <div class="item-body">\
+                        <a href="http://54.201.170.111/assets/001-720p-2500kb.mp4"><img class="img-responsive" src="'+feedItem.image+'" alt=""/></a>\
+                        <div class="item-time">'+feedItem.duration+'</div>\
+                    </div>\
+                    <div class="item-footer">\
+                        <span class="item-title">'+feedItem.title+'</span>\
+                        <span class="connection-speed fast '+feedItem.speed+' "> </span>\
+                        <a class="dots" href="#showmore"> </a>\
+                        <div class="more-dots"><button type="button" class="btn btn-primary btn-sm">Watch Later</button></div>\
+                    </div>\
+                </div>\
+            </div>'
+        );
 
     });
 
@@ -65,6 +42,10 @@ function builder(parsedData) {
         $(this).closest('li').find('.feed-item-comments').toggle();
     });
 
+    $('.dots').click(function(e){
+        e.preventDefault();
+        $('.more-dots').toggle('slow');
+    });
 }
 
 
@@ -75,7 +56,7 @@ $(document).ready(function(){
         "http://nebel.tv/getMedias",
         {
             skip: 100,
-            n: 3,
+            n: 9,
             category: 0,
             callback: 'builderParcer'
         }, builderParcer
@@ -83,5 +64,8 @@ $(document).ready(function(){
 
 
     );
+
+
+
 
 });

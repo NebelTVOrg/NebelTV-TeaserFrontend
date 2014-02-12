@@ -1,0 +1,93 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+body{
+    background-color: #202020;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.feed-item{
+
+
+}
+.item-author{
+    display: inline-block;
+    width: 70%;
+}
+.item-social{
+    display: inline-block;
+    line-height: 20px;
+    float: right;
+}
+    .item-social .icon{
+        background: url("../images/social-icons.png") no-repeat;
+        width: 20px;
+        height: 18px;
+    }
+    .item-social .icon.like{
+        display: inline-block;
+        background-position: 0 0;
+    }
+    .item-social .icon.comments{
+        display: inline-block;
+        background-position: -18px -2px;
+    }
+.item-body{
+    text-align: -webkit-center;
+    background-color: dimgray;
+    position: relative;
+
+}
+.item-time{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.item-title{
+    font-size: 1.14em;
+    display: inline-block;
+    width: 80%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 28px;
+    position: relative;
+}
+.item-footer{
+    position: relative;
+    line-height: 28px;
+}
+.connection-speed{
+    background: url("../images/speed-set.png") no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 28px;
+    float: right;
+    margin-right: 30px;
+}
+    .connection-speed.slow{
+        background-position: 0 center;
+    }
+    .connection-speed.normal{
+        background-position: -30px center;
+    }
+    .connection-speed.fast{
+        background-position: -60px center;
+    }
+.item-footer a.dots{
+    display: block;
+    background: url("../images/dots.png") left center no-repeat;
+    height: 20px;
+    width: 14px;
+    position: absolute;
+    right: 0;
+    top:7px;
+}
+.item-footer .more-dots{
+    display: none;
+
+}
+@media (max-width: 768px){
+    .col-xs-12 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
