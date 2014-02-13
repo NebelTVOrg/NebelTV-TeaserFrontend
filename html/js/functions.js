@@ -19,7 +19,7 @@ function builder(parsedData) {
                         <span class="item-author">Item Author</span><span class="item-social"><span class="icon like"></span>'+(Math.floor(Math.random()*1000))+'<span class="icon comments"></span>'+(Math.floor(Math.random()*1000))+'</span>\
                     </div>\
                     <div class="item-body">\
-                        <a href="host/getVideoAssets?id=0"><img class="img-responsive" src="'+feedItem.image+'" alt=""/></a>\
+                        <a href="http://nebel.tv/getVideoAssets?id=0"><img class="img-responsive" src="'+feedItem.image+'" alt=""/></a>\
                         <div class="item-time">'+feedItem.duration+'</div>\
                     </div>\
                     <div class="item-footer">\
