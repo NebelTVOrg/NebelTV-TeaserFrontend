@@ -83,8 +83,14 @@ body{
 }
 .item-footer .more-dots{
     display: none;
-
+    position: absolute;
+    top: 2px;
+    right: 20%;
 }
+.img-responsive{
+    width: 100%;
+}
+
 @media (max-width: 768px){
     .col-xs-12 {
         padding-left: 0;
