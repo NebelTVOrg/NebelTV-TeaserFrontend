@@ -30,12 +30,13 @@ function secondsToTime(secs)
 }
 
 
-/*
- function builderParcer(data){
- var parsedData =  eval('('+data+')');
- builder(parsedData);
- }
- */
+
+function builderParcer(data)
+{
+ 	var parsedData =  eval('('+data+')');
+ 	builder(parsedData);
+}
+
 
 
 function builder(parsedData) {
@@ -94,14 +95,10 @@ $(document).ready(function(){
             skip: 100,
             n: 9,
             category: 27,
-            callback: 'builder'
+            callback: 'builderParcer'
         }, builder
 
 
 
     );
-
-
-
-
 });
