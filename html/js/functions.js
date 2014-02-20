@@ -6,7 +6,7 @@
  * http://54.201.170.111:8080/IvaWrapperWeb - development version (browser testing)
  *
  * */
-var host = 'http://54.201.170.111:8080/IvaWrapperWeb';
+var host = 'http://nebeltv.org';
 
 
 
