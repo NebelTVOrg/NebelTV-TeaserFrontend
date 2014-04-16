@@ -1,26 +1,18 @@
 <config>
     <mood name="family">
         <friends_feed>/friends_feed.html</friends_feed>
-        <whats_close>/whats_close.html</whats_close>
-        <recently_viewed>/recently_viewed.html</recently_viewed>
-        <whats_hot>/whats_hot.html</whats_hot>
-        <pictures>/pictures.html</pictures>
-        <recommended>/recommended.html</recommended>
+        <wallet>/wallet.html</wallet>
+        <options>/options.html</options>
+
     </mood>
     <mood name="kids">
         <friends_feed>/friends_feed.html</friends_feed>
-        <whats_close>/whats_close.html</whats_close>
-        <recently_viewed>/recently_viewed.html</recently_viewed>
-        <whats_hot>/whats_hot.html</whats_hot>
-        <pictures>/pictures.html</pictures>
-        <recommended>/recommended.html</recommended>
+        <wallet>/wallet.html</wallet>
+        <options>/options.html</options>
     </mood>
     <mood name="romance">
         <friends_feed>/friends_feed.html</friends_feed>
-        <whats_close>/whats_close.html</whats_close>
-        <recently_viewed>/recently_viewed.html</recently_viewed>
-        <whats_hot>/whats_hot.html</whats_hot>
-        <pictures>/pictures.html</pictures>
-        <recommended>/recommended.html</recommended>
+        <wallet>/wallet.html</wallet>
+        <options>/options.html</options>
     </mood>
 </config>
