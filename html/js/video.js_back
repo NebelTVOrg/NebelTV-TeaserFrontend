@@ -1,0 +1,90 @@
+/**
+ * Created by howtwizer on 23.12.13.
+ */
+
+/* Define Host
+ * http://54.201.170.111:8080/IvaWrapperWeb - development version (browser testing)
+ *
+ * */
+//var host = 'http://54.201.170.111:8080/IvaWrapperWeb';
+
+
+
+
+
+function builder() {
+
+    var movie = [];
+
+
+
+
+
+
+
+    movie.push(
+            '<div class="col-xs-12 col-sm-6 col-md-4">\
+                <div class="movie-item">\
+                    <div class="item-header">\
+                        \
+                    </div>\
+                    <div class="item-body">\
+                              <img  class="img-responsive" src="images/dem1.jpg">\
+                             <a class="play" href="#play"><span class="glyphicon glyphicon-play"></span></a>\
+                    </div>\
+                    <div class="item-footer">\
+                        <div class="video-title row">\
+                        <div class="col-xs-10 title-holder">\
+                            <span class="item-title">Video Item Demo title </span><span class="tag"><a class="brown" href="#tag1">tag 1</a></span><span class="tag"><a class="brown" href="#tag2">tag 2</a></span>\
+                        </div>\
+                        <div class="col-xs-2">\
+                           <span class="connection-speed "> </span>\
+                        </div>\
+                       </div>\
+                       <div class="video-social">\
+                       <span class="item-social"><span class="icon like"></span>'+(Math.floor(Math.random()*1000))+'   <span class="icon comments"></span>'+(Math.floor(Math.random()*1000))+'</span>\
+                       </div>\
+                       \
+                           <span class="item-author" style="background: url(images/hromadske-icon.png) left no-repeat;">Item Author </span>\
+                       <a class="watch-later">+ Watch Later</a>\
+                       <div class="clearfix"></div>\
+                    </div>\
+                    <div class="description">\
+                    <h4>Details</h4>\
+                    <span>IMDB Rating:</span><br>\
+                    <span class="rating">\
+                        <span class="glyphicon glyphicon-star"></span>\
+                        <span class="glyphicon glyphicon-star"></span>\
+                        <span class="glyphicon glyphicon-star"></span>\
+                        <span class="glyphicon glyphicon-star"></span>\
+                        <span class="glyphicon glyphicon-star-empty"></span>\
+                        8/10</span>\
+                        <div class="text">\
+                        <p>Little Jay was conquered by big waves when he was a child. Especially wander-wave which appear in a series of regular waves out of nowhere and surpassing others\
+                        <div class="shadow-mask"></div>\
+                        </div>\
+                        </p>\
+                    </div>\
+                </div>\
+            </div>'
+        );
+
+
+
+    $('#movie-overview').append(movie);
+
+
+
+    $('.dots').click(function(e){
+        e.preventDefault();
+        $(this).next('.more-dots').toggle('slow');
+    });
+
+}
+
+
+$(document).ready(function(){
+    builder();
+
+
+});

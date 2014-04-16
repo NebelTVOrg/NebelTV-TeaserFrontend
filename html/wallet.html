@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wallet</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src='js/jquery-2.0.3.min.js'></script>
+    <script src='js/bootstrap.min.js'></script>
+
+    <link href='css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.nav-tabs a').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show')
+            });
+
+
+        });
+    </script>
+
+</head>
+<body>
+<div class="container-fluid">
+    <div id="wallet" class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="wallet-item">
+                <div class="item-header row">
+                    <div class="col-xs-7 text-right">
+                        <p><span class="total">340</span>mBTC</p>
+                        <p>213.8&nbsp;&nbsp;USD</p>
+                        <p>1315&nbsp;&nbsp;CNY</p>
+                    </div>
+                    <div class="col-xs-5 qr">
+                        <img src="images/qr.jpg" alt="qr"/>
+                    </div>
+
+                </div>
+                <div class="item-body">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#both" data-toggle="tab">Both</a></li>
+                        <li><a class="recieved" href="#received" data-toggle="tab">Received</a></li>
+                        <li><a class="sent" href="#sent" data-toggle="tab">Sent</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="both">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td class="quantity">
+                                            <span class="glyphicon glyphicon-play recieved"></span>
+                                            +10.00
+                                        </td>
+                                        <td class="desc">
+                                            Nebel.TV advertising
+                                        </td>
+                                        <td class="date">
+                                            Feb 14
+                                        </td>
+                                        <td class="more">
+                                            <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="quantity">
+                                            <span class="glyphicon glyphicon-play sent"></span>
+                                            -3.00
+                                        </td>
+                                        <td class="desc">
+                                            Two Guns movie
+                                        </td>
+                                        <td class="date">
+                                            Feb 14
+                                        </td>
+                                        <td class="more">
+                                            <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="quantity">
+                                            <span class="glyphicon glyphicon-play recieved"></span>
+                                            +5.00
+                                        </td>
+                                        <td class="desc">
+                                            From MediaHub
+                                        </td>
+                                        <td class="date">
+                                            Feb 13
+                                        </td>
+                                        <td class="more">
+                                            <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="quantity">
+                                            <span class="glyphicon glyphicon-play recieved"></span>
+                                            +10.00
+                                        </td>
+                                        <td class="desc">
+                                            Nebel.TV advertising
+                                        </td>
+                                        <td class="date">
+                                            Feb 12
+                                        </td>
+                                        <td class="more">
+                                            <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="quantity">
+                                            <span class="glyphicon glyphicon-play recieved"></span>
+                                            +12.00
+                                        </td>
+                                        <td class="desc">
+                                            Nebel.TV advertising
+                                        </td>
+                                        <td class="date">
+                                            Feb 11
+                                        </td>
+                                        <td class="more">
+                                            <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="quantity">
+                                            <span class="glyphicon glyphicon-play recieved"></span>
+                                            +7.00
+                                        </td>
+                                        <td class="desc">
+                                            Nebel.TV advertising
+                                        </td>
+                                        <td class="date">
+                                            Feb 9
+                                        </td>
+                                        <td class="more">
+                                            <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="quantity">
+                                            <span class="glyphicon glyphicon-play sent"></span>
+                                            -1.00
+                                        </td>
+                                        <td class="desc">
+                                            Rio Cartoon
+                                        </td>
+                                        <td class="date">
+                                            Feb 4
+                                        </td>
+                                        <td class="more">
+                                            <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="quantity">
+                                            <span class="glyphicon glyphicon-play sent"></span>
+                                            -30.00
+                                        </td>
+                                        <td class="desc">
+                                            Star Wars movie
+                                        </td>
+                                        <td class="date">
+                                            Feb 1
+                                        </td>
+                                        <td class="more">
+                                            <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane" id="received">
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td class="quantity">
+                                        <span class="glyphicon glyphicon-play recieved"></span>
+                                        +10.00
+                                    </td>
+                                    <td class="desc">
+                                        Nebel.TV advertising
+                                    </td>
+                                    <td class="date">
+                                        Feb 14
+                                    </td>
+                                    <td class="more">
+                                        <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="quantity">
+                                        <span class="glyphicon glyphicon-play recieved"></span>
+                                        +5.00
+                                    </td>
+                                    <td class="desc">
+                                        From MediaHub
+                                    </td>
+                                    <td class="date">
+                                        Feb 13
+                                    </td>
+                                    <td class="more">
+                                        <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="quantity">
+                                        <span class="glyphicon glyphicon-play recieved"></span>
+                                        +10.00
+                                    </td>
+                                    <td class="desc">
+                                        Nebel.TV advertising
+                                    </td>
+                                    <td class="date">
+                                        Feb 12
+                                    </td>
+                                    <td class="more">
+                                        <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="quantity">
+                                        <span class="glyphicon glyphicon-play recieved"></span>
+                                        +12.00
+                                    </td>
+                                    <td class="desc">
+                                        Nebel.TV advertising
+                                    </td>
+                                    <td class="date">
+                                        Feb 11
+                                    </td>
+                                    <td class="more">
+                                        <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="quantity">
+                                        <span class="glyphicon glyphicon-play recieved"></span>
+                                        +7.00
+                                    </td>
+                                    <td class="desc">
+                                        Nebel.TV advertising
+                                    </td>
+                                    <td class="date">
+                                        Feb 9
+                                    </td>
+                                    <td class="more">
+                                        <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <div class="tab-pane" id="sent">
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td class="quantity">
+                                        <span class="glyphicon glyphicon-play sent"></span>
+                                        -3.00
+                                    </td>
+                                    <td class="desc">
+                                        Two Guns movie
+                                    </td>
+                                    <td class="date">
+                                        Feb 14
+                                    </td>
+                                    <td class="more">
+                                        <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="quantity">
+                                        <span class="glyphicon glyphicon-play sent"></span>
+                                        -1.00
+                                    </td>
+                                    <td class="desc">
+                                        Rio Cartoon
+                                    </td>
+                                    <td class="date">
+                                        Feb 4
+                                    </td>
+                                    <td class="more">
+                                        <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="quantity">
+                                        <span class="glyphicon glyphicon-play sent"></span>
+                                        -30.00
+                                    </td>
+                                    <td class="desc">
+                                        Star Wars movie
+                                    </td>
+                                    <td class="date">
+                                        Feb 1
+                                    </td>
+                                    <td class="more">
+                                        <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
