@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Options</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src='js/jquery-2.0.3.min.js'></script>
+    <script src='js/iphone-style-checkboxes.js'></script>
+
+    <link href='css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+    <link href='css/checkbox.css' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+        $(':checkbox').iphoneStyle();
+        });
+    </script>
+
+</head>
+<body>
+<div class="container-fluid">
+    <div id="options" class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="options-item">
+                <div class="item-header">
+                    <img src="images/settings.png" alt="settings"/>
+                    <h4>Sports</h4>
+                </div>
+                <div class="item-body">
+                    <table class="table">
+
+                        <tr class="on_off">
+                            <th><label for="Passcode">Passcode</label></th>
+                            <td>
+                                <input type="checkbox" checked="checked" id="Passcode"/>
+                            </td>
+                        </tr>
+                        <tr class="on_off">
+                            <th><label for="Obscured">Obscured Face </label></th>
+                            <td>
+                                <input type="checkbox" checked="checked" id="Obscured"/>
+                            </td>
+                        </tr>
+                        <tr class="on_off">
+                            <th><label for="Private">Private</label></th>
+                            <td>
+                                <input type="checkbox" id="Private"/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="item-footer">
+                    <img src="images/qr.jpg" alt="qr"/>
+                </div>
+
+
+            </div>
+        </div>
+      </div>
+</div>
+</body>
+</html>
