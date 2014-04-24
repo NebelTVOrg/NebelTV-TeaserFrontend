@@ -1,6 +1,11 @@
 <config>
     <mood name="family">
         <friends_feed>/friends_feed.html</friends_feed>
+        <whats_hot>/friends_feed.html</whats_hot>
+        <whats_close>/friends_feed.html</whats_close>
+        <watch_later>/friends_feed.html</watch_later>
+        <recently_viewed>/friends_feed.html</recently_viewed>
+
         <wallet>/wallet.html</wallet>
         <options>/options.html</options>
 
