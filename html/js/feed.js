@@ -39,7 +39,7 @@ function builder(data) {
                         <div class="cycle-slideshow img-responsive" data-cycle-slides="> a" data-cycle-timeout="0" data-cycle-swipe="true" >\
                                 <a class="itemimg" style="background-image: url(items/covers/'+localImage+');" href="video-item.html#'+index+'"></a>\
                         </div>\
-                        <a class="item-action" href="http://54.201.170.111/assets/001-720p-2500kb.mp4"><span class="glyphicon glyphicon-facetime-video"></span> Play</a>\
+                        <a class="item-action" href="#play"><span class="glyphicon glyphicon-facetime-video"></span> Play</a>\
                     </div>\
                     <div class="item-footer row">\
                         <div class="col-xs-10 title-holder">\
