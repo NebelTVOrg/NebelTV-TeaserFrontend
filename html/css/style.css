@@ -556,11 +556,11 @@ body {
   color: #fff;
 }
 .wallet-item .item-header .total {
-  font-size: 86px;
+  font-size: 80px;
   line-height: 1;
 }
 .wallet-item .item-header p {
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 0;
 }
 .wallet-item .item-header .qr img {
@@ -594,7 +594,7 @@ body {
 }
 .wallet-item .item-body table {
   margin-bottom: 0;
-  font-size: 20px;
+  font-size: 18px;
 }
 .wallet-item .item-body table tr td .glyphicon {
   font-size: 14px;
