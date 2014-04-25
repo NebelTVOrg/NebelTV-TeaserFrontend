@@ -6,17 +6,18 @@
         <watch_later>/friends_feed.html</watch_later>
         <recently_viewed>/friends_feed.html</recently_viewed>
 
+        <content>/my_content.html</content>
         <wallet>/wallet.html</wallet>
         <options>/options.html</options>
+    </mood>
+    <mood name="sport">
+        <friends_feed>/friends_feed.html</friends_feed>
+        <whats_hot>/friends_feed.html</whats_hot>
+        <whats_close>/friends_feed.html</whats_close>
+        <watch_later>/friends_feed.html</watch_later>
+        <recently_viewed>/friends_feed.html</recently_viewed>
 
-    </mood>
-    <mood name="kids">
-        <friends_feed>/friends_feed.html</friends_feed>
-        <wallet>/wallet.html</wallet>
-        <options>/options.html</options>
-    </mood>
-    <mood name="romance">
-        <friends_feed>/friends_feed.html</friends_feed>
+        <content>/my_content.html</content>
         <wallet>/wallet.html</wallet>
         <options>/options.html</options>
     </mood>
