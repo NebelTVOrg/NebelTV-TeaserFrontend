@@ -371,7 +371,7 @@ function builder(data) {
                     </div>\
                     <div class="item-body">\
                               <img  class="img-responsive" src="items/covers/'+imageLink+'">\
-                             <a class="play" href="http://nebel.tv/IvaWrapperWeb/getVideoAssets?id=7"><span class="glyphicon glyphicon-play"></span></a>\
+                             <a class="play" href="http://nebel.tv/wrapper/getVideoAssets?id=0#play"><span class="glyphicon glyphicon-play"></span></a>\
                     </div>\
                     <div class="item-footer">\
                         <div class="video-title row">\
