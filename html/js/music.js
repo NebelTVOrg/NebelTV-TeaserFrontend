@@ -332,9 +332,6 @@ function builder(data) {
     music.push(
         '<div class="col-xs-12 col-sm-6 col-md-4">\
             <div class="music-item">\
-                <div class="item-header">\
-                        \
-                    </div>\
                     <div class="item-body">\
                               <img  class="img-responsive" src="items/mp3//okeanelzi-zemla-cover.jpg">\
                              <a class="play" href="#play"><span class="glyphicon glyphicon-play"></span></a>\

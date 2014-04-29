@@ -366,10 +366,7 @@ function builder(data) {
     movie.push(
             '<div class="col-xs-12 col-sm-6 col-md-4">\
                 <div class="movie-item">\
-                    <div class="item-header">\
-                        \
-                    </div>\
-                    <div class="item-body">\
+                   <div class="item-body">\
                               <img  class="img-responsive" src="items/covers/'+imageLink+'">\
                              <a class="play" href="http://nebel.tv/wrapper/getVideoAssets?id=0#play"><span class="glyphicon glyphicon-play"></span></a>\
                     </div>\
